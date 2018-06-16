@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/color_lightest_gray">
 
     <TextView
         android:id="@+id/tv_01"
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="15dp"
-        android:text="Digite seu nome"
+        android:text="Olá Aluno"
         android:textColor="#849274"
         android:textSize="25sp" />
 
@@ -20,7 +21,28 @@
         android:id="@+id/et_01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Coloque seu nome" />
+        android:hint="Login"
+        android:padding="15dp"
+        android:background="@drawable/et_border"
+        android:layout_margin="15dp"
+        android:drawableStart="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/color_tiffany3"
+        />
+
+    <EditText
+        android:id="@+id/et_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:padding="15dp"
+        android:background="@drawable/et_border"
+        android:layout_margin="15dp"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/color_tiffany3"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +55,12 @@
             android:id="@+id/btn_01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txt_exibir_nome" />
+            android:text="Entrar"
+            android:textColor="@color/color_lightest_gray"
+            android:background="@drawable/btn_standard"
+            android:padding="5dp"
+
+            />
 
         <View
             android:layout_width="40dp"
@@ -42,7 +69,11 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Limpar Campo" />
+            android:text="Limpar Campo"
+            android:background="@drawable/btn_standard"
+            android:textColor="@color/color_lightest_gray"
+            android:padding="5dp"
+            />
 
     </LinearLayout>
 
